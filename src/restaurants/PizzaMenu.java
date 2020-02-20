@@ -179,7 +179,7 @@ public class PizzaMenu {
         Integer closerMinSlicesPizza = -1;
         //Integer closerBiggerPizzaId = -1;
         Integer closerSmallerPizzaId = -1;
-        pizzaSegment = (pizzaSegment) * 10 ;
+        pizzaSegment = (pizzaSegment) * 10 -1;
         if (slices.compareTo(this.getSlicesOfBiggestPizza()) >= 0) {
             return this.getBiggerPizza();
         }
