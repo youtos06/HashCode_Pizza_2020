@@ -10,10 +10,7 @@ public class Restaurant {
     public Command command;
 
 
-    public Restaurant(String filename) throws Exception {
-
-        String path = "src/in/" + filename;
-        File file = new File(path);
+    public Restaurant(File file) throws Exception {
         BufferedReader br = new BufferedReader(new FileReader(file));
         StringBuilder numberInString = new StringBuilder();
         int i = br.read();
